@@ -89,6 +89,7 @@ img {
   color: var(--brand-color);
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover {
   color: #404bbf;
@@ -96,8 +97,22 @@ img {
 .header-link:focus {
   color: #404bbf;
 }
+.current {
+  position: relative;
+  color: #404bbf;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: #404bbf;
+  height: 4px;
+  width: 100%;
+}
 .address {
   font-style: normal;
+  margin-left: auto;
   color: #434455;
 }
 .address-list {
@@ -106,7 +121,6 @@ img {
   align-items: center;
 }
 .address-item {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -114,6 +128,7 @@ img {
 }
 .contacts-link {
   color: #434455;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover {
   color: #404bbf;
@@ -126,6 +141,16 @@ img {
   background: var(--brand-color);
   padding-top: 188px;
   padding-bottom: 188px;
+}
+.hero-container {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-style: normal;
