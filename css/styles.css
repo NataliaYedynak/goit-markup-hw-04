@@ -228,8 +228,8 @@ img {
   min-width: 264px;
   margin-bottom: 8px;
 }
-.benefits-icon {
-}
+/*.benefits-icon {
+}*/
 /*Team section*/
 .team {
   padding-top: 120px;
@@ -407,6 +407,7 @@ img {
   background: var(--brand-color);
 }
 .footer-container {
+  display: flex;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
